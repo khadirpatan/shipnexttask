@@ -16,7 +16,7 @@ class Container extends Component {
   }
 
   async componentDidMount() {
-    const data = await axios.get("http://jsonplaceholder.typicode.com/users");
+    const data = await axios.get("https://jsonplaceholder.typicode.com/users");
     this.setState({ userData: data.data });
 
     window.addEventListener("resize", this.resizeWindow);
@@ -46,7 +46,7 @@ class Container extends Component {
   handleClick = async data => {
     this.setState({ showRightContainer: true });
     const msgsData = await axios.get(
-      "http://jsonplaceholder.typicode.com/posts"
+      "https://jsonplaceholder.typicode.com/posts"
     );
     let msgsArray = msgsData.data;
     let newMsgArray = [];
