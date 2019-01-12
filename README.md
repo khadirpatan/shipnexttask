@@ -5,6 +5,6 @@ open terminal/cmd run below command (It will install all the node_modules which 
 
 after finishing installation run below command
 
-<b> npm start
+<b> npm start</b>
   
  you can check the webapplication in localhost:3000
